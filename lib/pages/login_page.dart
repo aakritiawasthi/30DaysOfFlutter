@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 // ignore: use_key_in_widget_constructors
@@ -6,19 +8,57 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
     return Material(
-      child: const Center(
-        // ignore: unnecessary_const
-        child: const Text(
-          "Login Page",
-          // ignore: unnecessary_const
-          style: const TextStyle(
-            fontSize: 20,
-            color: Colors.blue,
-            fontWeight: FontWeight.bold,
-          ), 
-          textScaleFactor: 3.0
+      color: Colors.white,
+      child: Column(children: [
+          Image.asset(
+          "assets/images/login_image.png",
+          fit: BoxFit.cover,
           ),
-      )      
+          // ignore: prefer_const_constructors
+          SizedBox(
+          height: 20.0,
+         ),
+          // ignore: prefer_const_constructors
+          Text( 
+          "Welcome", 
+           // ignore: prefer_const_constructors
+          style: TextStyle(
+          fontSize: 24,
+          fontWeight: FontWeight.bold,
+         ),
+         ),
+            SizedBox(
+         height: 20.0,
+         ),
+           Padding(
+             padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 32.0),
+             child: Column(
+               children: [
+                 TextFormField(
+                  decoration: InputDecoration(
+                  hintText:"Enter Username",
+                  labelText: "Username",
+                  ),
+                 ),
+                 TextFormField(
+                   obscureText: true,
+                  decoration: InputDecoration(
+                  hintText:"Enter Password",
+                  labelText: "Password",
+                  ),
+                 ),
+                   SizedBox(
+                    height: 20.0,
+                  ),
+                   ElevatedButton(
+                     onPressed: (){}, 
+                     child: Text("Login"),
+                     )
+               ],
+             ),
+           )
+      ]
+      )
     );
   }
 }
