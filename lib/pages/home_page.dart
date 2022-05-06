@@ -1,6 +1,9 @@
+// ignore_for_file: avoid_unnecessary_containers, use_key_in_widget_constructors
+
 import 'package:flutter/material.dart';
 
-// ignore: use_key_in_widget_constructors
+import '../widgets/drawer.dart';
+
 class Homepage extends StatelessWidget {
    final int days = 30;
    final String name = "codepur";
@@ -12,12 +15,11 @@ class Homepage extends StatelessWidget {
             title: const Text("Catalog App"),
           ),
         body: Center(
-          // ignore: avoid_unnecessary_containers
           child: Container(
             child: Text("Welcome to $days of flutter by $name"),
           ),
         ),  
-        drawer: const Drawer(),
+        drawer: const MyDrawer(),
     );
   }
 }

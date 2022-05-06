@@ -1,9 +1,8 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
 
 import 'package:catalog_app/pages/utils/routes.dart';
 import 'package:flutter/material.dart';
 
-// ignore: use_key_in_widget_constructors
 class LoginPage extends StatefulWidget {
   @override
   State<LoginPage> createState() => _LoginPageState();
