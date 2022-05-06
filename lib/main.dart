@@ -6,7 +6,7 @@ import 'package:catalog_app/pages/utils/themes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'pages/home_page.dart';
-
+// Day 11 we learned about context, constraints
 void main() {
   runApp(MyApp());
 }
